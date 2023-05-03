@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>My Portfolio</title>
+    <meta name="description" content="テキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://github.com/yamadashoya/Portfolio/blob/main/docs/index.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <ul>
+          <li><a href="#about">self-introduction</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    
+    <main>
+      <div id="mainvisual">
+        <picture>
+          <source media="(max-width: 600px)" srcset="docs/main.jpg">
+          <img src="docs/main.jpg" alt="テキストテキストテキスト">
+
+        </picture>
+      </div>
+
+      <section id="about" class="wrapper">
+        <h2 class="sec-title">self-introduction</h2>
+        <ul>
+          <li>山田 祥也/Yamada shoya</li>
+          <li>武蔵野大学データサイエンス学部データサイエンス学科/Department of Data Science, Musashino University</li>
+          <li>mail: s2122087@stu.musashino-u.ac.jp</li>
+        </ul>
+      </section>
+
+      <section id="works" class="wrapper">
+        <h2 class="sec-title">Works</h2>
+        <ul>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwGCoQK4zAFlavty7snIxCHsF8DaCzGeq6s4nRRtOaQ1pf7is3Pq3Uioc-qOnfml3nh3PX9Oc0t_xe/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwGCoQK4zAFlavty7snIxCHsF8DaCzGeq6s4nRRtOaQ1pf7is3Pq3Uioc-qOnfml3nh3PX9Oc0t_xe/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </ul>
+      </section>
+
+      <section id="news" class="wrapper">
+        <h2 class="sec-title">News</h2>
+        <dl>
+          <dt>2021</dt>
+          <dd>武蔵野大学データサイエンス学部データサイエンス学科 入学</dd>
+          <dt>2019</dt>
+          <dd>データサイエンスについて興味を持つ</dd>
+          <dt>2006</dt>
+          <dd>5歳で体重:30kg 足のサイズ:23.5cmを記録し</dd>
+          <dt>2001.05.14</dt>
+          <dd>53cm、3203gで誕生</dd>
+        </dl>
+      </section>
+
+      <section id="contact" class="wrapper">
+        <h2 class="sec-title">Contact</h2>
+        <form action="#" method="post">
+          <dl>
+            <dt><label for="name">NAME</label></dt>
+            <dd><input type="text" id="name" name="your-name"></dd>
+            <dt><label for="email">E-mail</label></dt>
+            <dd><input type="email" id="email" name="your-email"></dd>
+            <dt><label for="message">MESSAGE</label></dt>
+            <dd><textarea id="message" name="your-message"></textarea></dd>
+          </dl>
+          <div class="button"><input type="submit" value="送信"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p>©2023 Shoya Yamada</p>
+    </footer>
+
+  </body>
+
+</html>
