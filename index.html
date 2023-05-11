@@ -1,85 +1,72 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <title>My Portfolio</title>
-    <meta name="description" content="テキスト">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://github.com/yamadashoya/Portfolio2023/blob/main/index.css">
-  </head>
 
-  <body>
-    <header id="header">
-      <nav>
-        <ul>
-          <li><a href="#about">self-introduction</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#contact">Contact</a></li>
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maxium-scale=1, userscalable=no">
+</head>
+
+<style>
+  nav .menu a {
+      color: black;
+  }
+</style>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="menu"><a href="#about">About</a></li>
+            <li class="menu"><a href="#skill">Skill</a></li>
+            <li class="menu"><a href="#works">Works</a></li>
+            <li class="menu"><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-    </header>
+    </nav>
+    <p class="img">
+      <img src="./new_main_img.png">
+  </p>
 
+    <h2 id="about">About</h2>
+    <ul>
+        <h4>山田 祥也/yamada shoya</h4>
+        <h4>武蔵野大学データサイエンス学部データサイエンス学科</h4>
+        <h4>s2122087@stu.musashino-u.ac.jp</h4>
+    </ul>
     
-    <main>
-      <div id="mainvisual">
-
-          <img src="new_main_img.png">
-
-
+    <h2 id="skill">Skill</h2>
+    <ul>
+      <li>python</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>スポーツ(特に野球)のデータ化に興味があり機械学習、画像認識などを用いてアマチュア野球のデータ化実現に向けて取り組んでいる</li>
+ 
+    </ul>
+    
+    <h2 id="works">Works</h2>
+    <ul>
+      <h4>現在取り組んでいる研究</h4>
+      <li>画像認識による野球スコアブックの自動化</li>
+      <p>高校野球においてデータの収集は紙媒体で行われており、アマチュアでのデータ野球化はあまり普及していない。
+        既に存在する膨大の紙データを、スマホ1台でデータ化出来るようなシステムの構築に取り組んでいる。
+      </p>
+      <div class="g-slide">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSkA3DIX3M7pS8njNn-yE48PDXzzoJoKwkzovdHt8g_0c0xOcgd8xzTeHqaAi4_vHpIyiyguKHrh9XV/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
       </div>
+  </ul>
+    <ul>
+      <h4>過去に取り組んだ研究</h4>
+      <li>大谷翔平投手の全投球データを用いた球種判別のための機械学習手法</li>
+      <p>2018年〜2022年の大谷翔平選手が投げた全5588球のデータを元に、機械学習を行った。</p>
+      <div class="g-slide">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRs_HXRtfiAOT_YIU_zHE1TCjy7UpGB7TXOu7emH3ghB-IMp9iahZtd513J3D6YQwhtkGcq6dBYRK7j/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      </div>
+  </ul>
 
-      <section id="about" class="wrapper">
-        <h2 class="sec-title">self-introduction</h2>
-        <ul>
-          <li>山田 祥也/Yamada shoya</li>
-          <li>武蔵野大学データサイエンス学部データサイエンス学科/Department of Data Science, Musashino University</li>
-          <li>mail: s2122087@stu.musashino-u.ac.jp</li>
-        </ul>
-      </section>
 
-      <section id="works" class="wrapper">
-        <h2 class="sec-title">Works</h2>
-        <ul>
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwGCoQK4zAFlavty7snIxCHsF8DaCzGeq6s4nRRtOaQ1pf7is3Pq3Uioc-qOnfml3nh3PX9Oc0t_xe/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwGCoQK4zAFlavty7snIxCHsF8DaCzGeq6s4nRRtOaQ1pf7is3Pq3Uioc-qOnfml3nh3PX9Oc0t_xe/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-        </ul>
-      </section>
+  <h2 id="contact">Contact</h2>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdMRa_JFJPxXgS8RRiA0_-LGWVkpk98U8iavJdZ9rI1kl5MeA/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
 
-      <section id="news" class="wrapper">
-        <h2 class="sec-title">News</h2>
-        <dl>
-          <dt>2021</dt>
-          <dd>武蔵野大学データサイエンス学部データサイエンス学科 入学</dd>
-          <dt>2019</dt>
-          <dd>データサイエンスについて興味を持つ</dd>
-          <dt>2006</dt>
-          <dd>5歳で体重:30kg 足のサイズ:23.5cmを記録し</dd>
-          <dt>2001.05.14</dt>
-          <dd>53cm、3203gで誕生</dd>
-        </dl>
-      </section>
-
-      <section id="contact" class="wrapper">
-        <h2 class="sec-title">Contact</h2>
-        <form action="#" method="post">
-          <dl>
-            <dt><label for="name">NAME</label></dt>
-            <dd><input type="text" id="name" name="your-name"></dd>
-            <dt><label for="email">E-mail</label></dt>
-            <dd><input type="email" id="email" name="your-email"></dd>
-            <dt><label for="message">MESSAGE</label></dt>
-            <dd><textarea id="message" name="your-message"></textarea></dd>
-          </dl>
-          <div class="button"><input type="submit" value="送信"></div>
-        </form>
-      </section>
-    </main>
-
-    <footer id="footer">
-      <p>©2023 Shoya Yamada</p>
-    </footer>
-
-  </body>
-
+    <footer>©︎2023 Shoya Yamada</footer>
+</body>
 </html>
